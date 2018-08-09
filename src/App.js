@@ -38,6 +38,7 @@ class App extends Component {
           <input type="input" onChange={(event) => this.setState({author: event.target.value})}/>
 
           <button>Create Book</button>
+          <button>Create Book</button>
         </form>
         {this.state.books.map(book => <Book key={book.title} title={book.title} author={book.author} />)}
       </div>
